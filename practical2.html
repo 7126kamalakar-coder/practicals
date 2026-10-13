@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>responsive grid layout</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px
+        }
+
+        .box {
+            background-color: lightblue;
+            padding: 30px;
+            text-align: centre;
+            font-size: 20px;
+        }
+
+        /* for small screen*/
+        @media (max-width:600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Resposive grid layout</h2>
+    
+    <div class="container">
+        <div class="box">column 1</div>
+        <div class="box">column 2</div>
+    </div>
+</body>
+</html>
